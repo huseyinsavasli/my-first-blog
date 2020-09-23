@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Yeni Doğum Günü Mesajı Gir</h1>
+    <h5>Title içerisinde lütfen adınızı belirtiniz!<h5>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Kaydet</button>
